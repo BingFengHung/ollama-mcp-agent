@@ -2,3 +2,9 @@ npx -y supergateway --stdio "uv run --with mcp[cli] mcp run mcp_server_calc.py" 
 
 
 uv run main.py
+
+To use remote ollama
+remember to change 
+
+
+mcp_config.json、main.py
