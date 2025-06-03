@@ -9,6 +9,10 @@
             "command": "python",
             "args": ["./mcp_server/mcp_server_file_manager.py"],
             "transport": "stdio"
+        },
+        "mcp_server_calc": {
+             "transport": "sse",
+             "url": "http://localhost:8000/sse"
         }
     }
 }

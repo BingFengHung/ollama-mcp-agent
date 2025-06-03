@@ -57,7 +57,7 @@ DEFAULT_TEMPERATURE = 0.1
 # astream_log is used to display the data generated during the processing process.
 USE_ASTREAM_LOG = True
 # LLM model settings that support Tool calling
-QWEN3_14B = "qwen3:14b"  # default model
+QWEN3_14B = "llama3.2:3b"  # default model
 QWEN3 = QWEN3_14B
 
 
@@ -76,6 +76,7 @@ def create_chat_model(
 ) -> ChatOllama | CompiledGraph:
     # Create Chat model: Requires LLM with Tool support
     chat_model = ChatOllama(
+        base_url="http://172.26.191.76:11434",
         model=QWEN3,
         temperature=temperature,
     )

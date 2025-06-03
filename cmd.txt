@@ -1,0 +1,4 @@
+npx -y supergateway --stdio "uv run --with mcp[cli] mcp run mcp_server_calc.py" --port 8000 --baseUrl http://localhost:8000 --ssePath /sse
+
+
+uv run main.py
